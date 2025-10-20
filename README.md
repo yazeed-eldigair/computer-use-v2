@@ -1,6 +1,4 @@
-## Computer Use v2
-
-This monorepo implements a modern alternative to the Anthropic's open-source [Computer Use demo](https://github.com/anthropics/anthropic-quickstarts/tree/main/computer-use-demo) using Next.js and FastAPI, featuring real-time task execution, file management, and VNC integration.
+A V2 of Anthropic's open-source [Computer Use demo](https://github.com/anthropics/anthropic-quickstarts/tree/main/computer-use-demo) using React and FastAPI, featuring real-time task execution, file management, and VNC integration.
 
 ## Getting Started
 
@@ -59,13 +57,10 @@ This project includes recommended VS Code extensions for Python and JavaScript d
 
 ## Tech Stack
 
-- **Frontend**: Next.js
+- **Frontend**: React/Next.js
 - **Backend**: Python FastAPI
 - **Database**: SQLite
-- **Real-time**: WebSockets
-- **UI Components**: shadcn/ui
 - **AI Integration**: Anthropic Claude API
-- **Infrastructure**: Docker, Kubernetes (GCP)
 
 ## System Architecture
 
