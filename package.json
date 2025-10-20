@@ -1,0 +1,14 @@
+{
+  "name": "computer-use-v2",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "setup:env": "cd apps/api && if not exist .env copy .env.example .env",
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:api": "cd apps/api && docker-compose up --build"
+  }
+}

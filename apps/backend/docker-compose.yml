@@ -1,0 +1,21 @@
+services:
+  backend-computer-use-v2:
+    build: .
+    ports:
+      - "8000:8000"  # FastAPI
+      - "5900:5900"  # VNC
+      - "6080:6080"  # noVNC
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    environment:
+      - DISPLAY_NUM=1
+      - PYTHONUNBUFFERED=1
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DEBUG=True
+      - DATABASE_URL=computer_use_v2.db
+      - ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+      - MAX_UPLOAD_SIZE=10485760
+      - UPLOAD_DIR=uploads

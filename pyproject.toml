@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 79
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 79
+
+[tool.pylint]
+max-line-length = 79
+disable = [
+    "C0111",  # missing-docstring
+    "C0103",  # invalid-name
+    "C0114",  # missing-module-docstring
+    "C0115",  # missing-class-docstring
+    "C0116",  # missing-function-docstring
+]
+ignore = [".git", "venv", "__pycache__", "node_modules"]
+ignore-patterns = ["^\\.#"]
+python-paths = ["apps/api"]

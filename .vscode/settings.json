@@ -1,0 +1,64 @@
+{
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.unusedImports": "explicit",
+      "source.fixAll": "explicit",
+      "rewrap.rewrapComment": "explicit"
+    }
+  },
+  "black-formatter.args": ["--line-length", "80"],
+  "flake8.args": ["--config=./apps/api/setup.cfg"],
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.analysis.extraPaths": ["./apps/api"],
+  "python.analysis.autoSearchPaths": true,
+  "isort.args": ["--profile", "black"],
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "python.testing.unittestEnabled": true,
+  "git.autofetch": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "rewrap.autoWrap.enabled": true,
+  "rewrap.wrappingColumn": 80,
+  "rewrap.wholeComment": true,
+  "rewrap.doubleSentenceSpacing": false,
+  "workbench.colorCustomizations": {},
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "workbench.iconTheme": "material-icon-theme",
+  "githubPullRequests.pullBranch": "never",
+  "eslint.codeActionsOnSave.rules": null,
+  "workbench.editor.enablePreview": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.largeFileOptimizations": false,
+  "terminal.integrated.scrollback": 5000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.rulers": [],
+  "notebook.formatOnSave.enabled": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.confirmSync": false
+}
