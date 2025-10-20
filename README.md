@@ -1,3 +1,5 @@
+[Blog post](https://yaz.codes/computer-use-v2)
+
 A V2 of Anthropic's open-source [Computer Use demo](https://github.com/anthropics/anthropic-quickstarts/tree/main/computer-use-demo) using React and FastAPI, featuring real-time task execution, file management, and VNC integration.
 
 ## Getting Started
